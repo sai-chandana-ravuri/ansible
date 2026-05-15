@@ -7,5 +7,5 @@
     TRAINER: "Siva"
   tasks:
   - name: Printing Variables
-    ansible.buildin.debug:
+    ansible.builtin.debug:
       msge: "Course name is: {{ COURSE }}"
