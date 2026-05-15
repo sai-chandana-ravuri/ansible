@@ -1,7 +1,7 @@
 - name: Variables
   hosts: local   #without targeting outside server for just printing
   connection: local #to not give passwords and username
-  VARS:
+  vars:
     COURSE: "Devops"
     DURATION: "120 Hours"
     TRAINER: "Siva"
