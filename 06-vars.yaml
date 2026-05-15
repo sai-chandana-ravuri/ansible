@@ -1,7 +1,7 @@
 - name: Variables
   hosts: local   #without targeting outside server for just printing
   connection: local #to not give passwords and username
-  var_files:
+  vars_files:
   - course.yaml       #variable files 
   tasks:
   - name: Printing Variables
