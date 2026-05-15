@@ -7,5 +7,7 @@
     TRAINER: "Siva"
   tasks:
   - name: Printing Variables
+    vars:
+      COURSE: "Task level devops"
     ansible.builtin.debug:
       msg: "Course name is: {{ COURSE }}"
