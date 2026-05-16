@@ -1,0 +1,7 @@
+- name: vars from args
+  hosts: local
+  connection: local
+  tasks:
+    - name: vars from args
+      ansible.builyin.debug:
+        msge: "Hello {{ NAME }}!!"
