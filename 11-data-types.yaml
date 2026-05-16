@@ -15,7 +15,7 @@
   tasks:
   - name: datatypes
     ansible.builtin.debug:
-      msge: |
+      msg: |
         Program: {{ PROGRAM }}
         Duration: {{ DURATION }}
         Is live: {{ IS_LIVE }}
