@@ -1,0 +1,23 @@
+- name: Data types
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "Hi, Chandana"
+    DURATION: 120
+    IS_LIVE: false
+    DETAILS:
+      MONTHS: 4
+      TRAINER: "Siva"
+    TOPICS:
+    - Linux
+    - Shell
+    - Ansible
+  tasks:
+  - name: datatypes
+    ansible.builtin.debug:
+      msge: |
+        Program: {{ PROGRAM }}
+        Duration: {{ DURATION }}
+        Is live: {{ IS_LIVE }}
+        Details: {{ DETAILS }}
+        Topics: {{ TOPICS }}
